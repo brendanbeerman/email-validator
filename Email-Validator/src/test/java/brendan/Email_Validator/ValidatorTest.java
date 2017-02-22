@@ -9,8 +9,8 @@ public class ValidatorTest
 	@Test
     public void validEmail()
 	{
-		String [] testEmails = new String[]{"hello", "something@gmail.com", "......@@@@", "valid.email@hotmail.com"};
-		boolean [] validity = new boolean[]{false, true, false, true};
+		String [] testEmails = new String[]{"hello", "something@gmail.com", "......@@@@", "in_vali+d.e~mail@hotmail.com", " ", "lengthbreaker@.lengthbreakerlengthbreakerlengthbreakerlengthbreakerlengthbreakerlengthbreakerlengthbreakerlengthbreakerlengthbreakerlengthbreakerlengthbreakerlengthbreakerlengthbreakerlengthbreakerlengthbreakerlengthbreakerlengthbreakerlengthbreakerlengthbreakerlengthbreakerlengthbreakerlengthbreakerlengthbreakerlengthbreakerlengthbreakerlengthbreakerlengthbreakerlengthbreakerlengthbreakerlengthbreakerlengthbreakerlengthbreakerlengthbreakerlengthbreakerlengthbreakerlengthbreakerlengthbreakerlengthbreakerlengthbreakerlengthbreakerlengthbreakerlengthbreakerlengthbreakerlengthbreakerlengthbreakerlengthbreakerlengthbreakerlengthbreakerlengthbreakerlengthbreakerlengthbreakerlengthbreakerlengthbreakerlengthbreakerlengthbreakerlengthbreakerlengthbreakerlengthbreakerlengthbreakerlengthbreakerlengthbreakerlengthbreakerlengthbreaker"};
+		boolean [] validity = new boolean[]{false, true, false, false, false, false};
 		
 		Validator validator;
 		
